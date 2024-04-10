@@ -1,4 +1,11 @@
+import pandas
+import csv
 
+table1 = pandas.DataFrame({"a" : [1, 2, 3, 4], "b" : [5, 6, 7, 8]})
+print(table1)
+table1.to_csv("table1.csv")
+with open("table.csv", "w") as file:
+  file = csv.DictWriter()
 
 
 class Table:
@@ -13,9 +20,9 @@ class Table:
         for column in self.columns:
             for key, value in row.items(): 
                 column[key] = value
-    def __str__(self): 
-      if not self.columns:      
-        return ""
+  def __str__(self): 
+    if not self.columns:      
+      return ""
 table = Table()
 fLine = {"a": 2, "b": 4}
 sLine = {"a": 3, "b": 9}
