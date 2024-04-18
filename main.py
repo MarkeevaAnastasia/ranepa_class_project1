@@ -3,8 +3,6 @@ import pandas
 # необходимый модуль
 import csv
 
-import csv
-
 class Table:
     def __init__(self, columns=None):
         self.columns = columns or []
@@ -60,6 +58,30 @@ print()
 table_from_file = Table()
 table_from_file.load_from_file("table.csv")
 print(table_from_file)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
